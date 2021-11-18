@@ -4,9 +4,9 @@ Post-processing Python modules for the Lemhi MikeBasin model. The script contain
 ## Example Usage from command line
 ### Writing data from excel file into dfs0s 
 
-```Shell Session
+```python
 python lempy.py --mode w --workbook UpperLemhi_LRBM_InputTS_2015-v06.xlsm --datasheet WD74 
-				--data_range B137:EX2788 --refrow 10 --refsheet Reference –outdir data
+--data_range B137:EX2788 --refrow 10 --refsheet Reference –outdir data
 ```
 
 Argument list
@@ -23,7 +23,7 @@ Argument list
 
 ```python
 python lempy.py --mode r --workbook CHCBM-FedDiv_All-32BIT-v03_test.xlsm --datasheet "BC1 Data" 
-				--header_range A47:BX52 --scenario_sheet Master --scenario_range A3:H8
+--header_range A47:BX52 --scenario_sheet Master --scenario_range A3:H8
 ```
 
 Argument list
