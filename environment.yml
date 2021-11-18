@@ -1,0 +1,7 @@
+name: lempy
+dependencies:
+  - numpy
+  - openpyxl
+  - pandas
+  - mikeio
+
