@@ -16,7 +16,7 @@ Arguments
 + **--mode w**  Always for write mode
 + **--workbook** Excel workbook with data to send to dfs0s
 + **--datasheet** Sheet name holding data for dfs0s
-+ **--data_range**Range of data to be exported including headers
++ **--data_range** Range of data to be exported including headers
 + **--ref_sheet** Node name (col 1) and DHI ID (col 2) table
 + **--refrow** First row of node and ID data excluding any header lines
 + **--outdir** Defaults to ./data, location to write dfs0s
@@ -30,7 +30,7 @@ python lempy.py --mode r --workbook workbooks/CHCBM-FedDiv_All-32BIT-v03_test.xl
 
 Arguments
 
-+ **--mode** r  Always for read mode
++ **--mode r**  Always for read mode
 + **--workbook** Excel workbook to load results into
 + **--datasheet** Sheet name holding item data
 + **--header_range** Excel Range with data header holding Scenario, Arc Name, DHI Arc, Item Name, Load Data. Located in “datasheet”
