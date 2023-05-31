@@ -8,6 +8,7 @@ from datetime import datetime
 
 from mikeio import Dfs0, read
 from mikeio.eum import ItemInfo, EUMType, EUMUnit
+from mikecore.DfsFile import DataValueType
 
 parser = argparse.ArgumentParser()
 # Switch
@@ -165,9 +166,11 @@ def excel2dfs0():
             elif (not unit) & ('Return' in item):
                 mike_type = EUMType.Return_Flow_Fraction
                 mike_unit = EUMType.Return_Flow_Fraction.units[0]
+      
 
             # Create Mike Item object
-            mike_item = ItemInfo(item,mike_type,unit=mike_unit)
+            mike_item = ItemInfo(item,mike_type,unit=mike_unit,
+                                 data_value_type=DataValueType.MeanStepForward)
 
             # Create dfs0
             print(f"Writing {item}")
